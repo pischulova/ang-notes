@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html ng-app='application'>
+<html ng-app='ntApplication'>
 <head>
-	<title>Angular Examples</title>
-	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js'></script>
-	<script src='main.js'></script>
+	<title>Notes</title>
+	<link rel='stylesheet' type='text/css' href='../resources/main.css'>
 </head>
-<body ng-controller='HelloController'>
-	<h1>{{message}}</h1>
-	<input ng-model='text'>
-	<button ng-click='clickHandler()'>Click</button>
-
+<body>
+	<nt-header></nt-header>
+	
+	<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js'></script>
+	<script src="../bin/app.bundle.js"></script>
 </body>
 </html>

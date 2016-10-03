@@ -1,11 +1,6 @@
-var model = 'aaa';
+import Header from './directives/header/Header';
+import Popup from './directives/popup/Popup';
 
-angular.module('application', [])
-	.controller('HelloController', function($scope) {
-		console.log('hello');
-		$scope.message = model;
-
-		$scope.clickHandler = function() {
-			$scope.message = $scope.text;
-		}
-	})
+angular.module('ntApplication', [])
+	.directive('ntHeader', Header)
+	.directive('ntPopup', Popup);
