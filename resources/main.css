@@ -65,6 +65,11 @@
    color: #595959;
  }
 
+ h2 {
+   font-size: 24px;
+   margin-bottom: 15px;
+ }
+
  .container {
    position: relative;
    width: 960px;
@@ -73,8 +78,8 @@
    padding: 30px;
  }
 
- .content {
-   margin: 15px auto 15px;
+ .note {
+   margin: 20px auto;
  }
 
   /*
@@ -141,7 +146,7 @@
     z-index: 5;
   }
 
-  .note {
+  .popup {
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
     position: absolute;
     left: 0;

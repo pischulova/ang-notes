@@ -1,4 +1,4 @@
-export default function Header($compile) {
+export default function Header($compile, indexedService) {
 
 	let directive = {
 		restrict: 'E',
@@ -11,7 +11,7 @@ export default function Header($compile) {
 }
 
 class HeaderCtrl {
-	constructor ($compile) {
+	constructor ($compile, indexedService) {
 		document.querySelector('.add-btn').addEventListener('click', ($scope) => {
 			var popupTemplate = $compile('<nt-popup></nt-popup>')($scope);
 			angular.element(document.body).append(popupTemplate);
