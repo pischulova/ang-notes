@@ -82,7 +82,7 @@ export default function IndexedDBService($q) {
                     	key:cursor.key, 
                     	title:cursor.value.title, 
                     	text:cursor.value.text, 
-                    	date:cursor.value.date});
+                    	date:Date.parse(cursor.value.date)});
                     cursor.continue();
                 }
             };  

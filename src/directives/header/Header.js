@@ -1,13 +1,11 @@
 export default function Header($compile, indexedService) {
 
-	let directive = {
+	return {
 		restrict: 'E',
 		templateUrl: 'directives/header/header.html',
 		controller: HeaderCtrl,
 		bindToController: true
-	};
-
-	return directive;
+	}
 }
 
 class HeaderCtrl {

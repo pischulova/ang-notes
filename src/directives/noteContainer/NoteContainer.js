@@ -1,9 +1,7 @@
 export default function NoteContainer() {
 
-	let directive = {
+	return {
 		restrict: 'E',
 		templateUrl: 'directives/noteContainer/noteContainer.html'
-	};
-
-	return directive;
+	}
 }

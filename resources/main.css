@@ -68,6 +68,8 @@
  h2 {
    font-size: 24px;
    margin-bottom: 15px;
+   position: relative;
+   left: 75px;
  }
 
  .container {
@@ -81,6 +83,21 @@
  .note {
    margin: 20px auto;
  }
+
+ .note-date {
+  color: #ffffff;
+  background: #c7d1d7;
+  position: absolute;
+  left: -10px;
+  padding: 5px 12px;
+  font-size: 90%;
+}
+
+.note-text {
+    text-align: justify;
+    padding: 0 10px 0 10px;
+    line-height: 1.3;
+}
 
   /*
   ========================================
